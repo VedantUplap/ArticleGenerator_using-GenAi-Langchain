@@ -51,3 +51,6 @@ http://127.0.0.1:5000
 - LangChain
 - Groq
 - HTML/CSS
+
+## Author
+Vedant Uplap - CSE
