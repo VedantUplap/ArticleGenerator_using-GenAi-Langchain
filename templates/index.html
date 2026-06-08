@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Article Generator</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        input{
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .output{
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+            white-space: pre-wrap;
+        }
+
+        .error{
+            color: red;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>AI Article Generator</h1>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="topic"
+            placeholder="Enter a topic..."
+            required>
+
+        <button type="submit">
+            Generate
+        </button>
+
+    </form>
+
+    {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    {% if article %}
+        <div class="output">
+            {{ article }}
+        </div>
+    {% endif %}
+
+</body>
+
+</html>
