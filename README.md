@@ -9,7 +9,7 @@ A Generative AI web application that creates high-quality articles from any topi
 * Modular prompt engineering using LangChain Prompt Templates
 * Built with LCEL (LangChain Expression Language)
 * Simple and responsive Flask-based web interface
-* Easy to set up and extend
+
 
 ##  Tech Stack
 
