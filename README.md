@@ -1,56 +1,114 @@
-# AI Article Generator
+#  AI Article Generator
 
-A Generative AI web application built using:
+A Generative AI web application that creates high-quality articles from any topic using **LangChain**, **Groq's Llama 3.3**, and **Flask**.
 
-- Flask
-- LangChain
-- Groq (Llama 3)
-- Prompt Templates
-- LCEL Chains
+##  Features
 
-## Features
+* Generate detailed AI-powered articles instantly
+* Powered by **Llama 3.3** via Groq API
+* Modular prompt engineering using LangChain Prompt Templates
+* Built with LCEL (LangChain Expression Language)
+* Simple and responsive Flask-based web interface
+* Easy to set up and extend
 
-- Generate detailed articles from any topic
-- Uses Llama 3.3 through Groq
-- Built with LangChain PromptTemplate
-- Clean Flask UI
+##  Tech Stack
 
-## Installation
+* Python
+* Flask
+* LangChain
+* Groq API
+* Llama 3.3
+* HTML/CSS
+* Python-dotenv
+
+##  Project Structure
 
 ```bash
-git clone <repo-url>
+ArticleGenerator/
+│
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
 cd ArticleGenerator
+```
 
+### 2. Create a Virtual Environment
+
+```bash
 python -m venv .venv
-source .venv/bin/activate
+```
 
+### 3. Activate the Environment
+
+**macOS/Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+### 4. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file:
+### 5. Configure Environment Variables
+
+Create a `.env` file in the root directory:
 
 ```env
-GROQ_API_KEY=your_api_key_here
+GROQ_API_KEY=your_groq_api_key
 ```
 
-Run:
+### 6. Run the Application
 
 ```bash
 python app.py
 ```
 
-Open:
+Open your browser and visit:
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
-## Tech Stack
+## How It Works
 
-- Flask
-- LangChain
-- Groq
-- HTML/CSS
+1. User enters a topic.
+2. LangChain PromptTemplate formats the prompt.
+3. Groq's Llama 3.3 generates the article.
+4. Flask renders the output on the web interface.
 
-## Author
-Vedant Uplap - CSE
+## Future Improvements
+
+* Article length selection
+* Tone customization (Formal, Casual, Technical)
+* Export articles as PDF
+* Article history and saving
+* Multi-language support
+
+##  Author
+
+**Vedant Uplap**
+B.Tech CSE Student 
+
+---
